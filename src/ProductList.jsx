@@ -292,16 +292,8 @@ function ProductList() {
                                 </svg>
                                 {totalItems > 0 && (
                                     <span
-                                        style={{
-                                            position: 'absolute',
-                                            top: '25%',
-                                            right: '20%',
-                                            color: 'white',
-                                            padding: '2px 6px',
-                                            fontSize: '25px',
-                                            fontWeight: 'bold',
-                                        }}
-                                    >
+                                    className="cart-item-count">
+                                    
                                         {totalItems}
                                     </span>
                                 )}
