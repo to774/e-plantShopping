@@ -24,7 +24,7 @@ export const CartSlice = createSlice({
         const itemRemoved = state.items.findIndex(item => item.name === name);
         if (itemRemoved) {
             state.totalItems = state.totalItems - (state.items[index].quantity);
-            state.items.splice(index, 1);
+            state.items = state.items.filter(item => item.name !== name);
         }
     },
     updateQuantity: (state, action) => {
